@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize - Formulär &copy; Patricia 2021</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Namn</legend>
+            <div class="input-field">
+                <input type="text" id="fname" name="fname" placeholder="Förnamn">
+                <label for="fname">Förnamn:</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="lname" name="lname" placeholder="Efternamn">
+                <label for="lname">Efternamn:</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="input-field">
+                <input type="text" id="address" name="address" placeholder="Adressgatuvägen 3">
+                <label for="address">Adress:</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password1" placeholder="Lösenord">
+                <label for="password1">Lösenord:</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password2" placeholder="Lösenord">
+                <label for="password2">Lösenord:</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email1" placeholder="fornamn.efternamn@example.com">
+                <label for="email1">E-post:</label>
+            </div>
+            <div class="input-field">
+                <input type="tel" id="phone" placeholder="+XX 678 XX XX">
+                <label for="phone">Telefonnummer:</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Skicka</button>
+        </fieldset>
+    </form>
+    <form>
+        <div class="input-field">
+            <input type="search" id="fsearch" name="fsearch">
+            <label for="fsearch">Sök:</label>
+        </div>
+        <input type="submit" value="Sök">
+    </form>
+    <form oninput="c.value=parseInt(a.value)+parseInt(b.value)">
+        <div class="row">
+            <p>
+                <label>
+                    <input type="radio" id="setting1" name="radiogroup" value="setting1">
+                    <span>Alternativ 1</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" id="setting2" name="radiogroup" value="setting2">
+                    <span>Alternativ 2</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" id="setting3" name="radiogroup" value="setting3" checked>
+                    <span>Alternativ 3</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" id="setting4" name="radiogroup" value="setting4">
+                    <span>Alternativ 4</span>
+                </label>
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                <label>
+                    <input type="checkbox" id="option1" name="option1" value="option1">
+                    <span>Val 1</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="option2" name="option2" value="option2">
+                    <span>Val 2</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="option3" name="option3" value="option3">
+                    <span>Val 3</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" id="option4" name="option4" value="option4">
+                    <span>Val 4</span>
+                </label>
+            </p>
+        </div>
+        <div class="input-field">
+            <select id="select-basic" name="select-basic">
+                <option value="1">Val 1</option>
+                <option value="2">Val 2</option>
+                <option value="3">Val 3</option>
+                <option value="4">Val 4</option>
+            </select>
+            <label>Välj:</label>
+        </div>
+        <div class="input-field">
+            <select id="select-group" name="select-group">
+                <optgroup label="Grupp 1">
+                    <option value="1">Val 1</option>
+                    <option value="2">Val 2</option>
+                </optgroup>
+                <optgroup label="Grupp 2">
+                    <option value="3">Val 3</option>
+                    <option value="4">Val 4</option>
+                </optgroup>
+            </select>
+            <label>Välj:</label>
+        </div>
+        <div class="row">
+            <input list="list1" name="list1">
+            <datalist id="list1">
+                <option value="1">Val 1</option>
+                <option value="2">Val 2</option>
+                <option value="3">Val 3</option>
+                <option value="4">Val 4</option>
+            </datalist>
+        </div>
+        <div class="row">
+            <div class="col s1">1</div>
+            <div class="col s2">
+                <p class="range-field">
+                    <input type="range" id="a" name="a" value="50" min="1" max="150">
+                </p>
+            </div>
+            <div class="col s1">150 +</div>
+            <div class="input-field col s4">
+                <input type="number" id="b" name="b" value="50">
+            </div>
+            <div class="col s1">=</div>
+            <div class="col s3">
+                <output name="c" for="a b"></output>
+            </div>
+        </div>
+        <div class="input-field">
+            <textarea id="textarea1" name="textarea1" class="materialize-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque sodales ut. Nam libero justo laoreet sit amet cursus sit.</textarea>
+            <label for="textarea1">Textarea:</label>
+        </div>
+        <div class="input-field">
+            <input type="url" id="add_link" name="add_link" placeholder="https://example.com/">
+            <label for="add_link">Webbadress:</label>
+        </div>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Välj fil:</span>
+                <input type="file" id="new_file" name="new_file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div>
+        <input type="hidden" name="customer_id" id="customer_id" value="123456">
+        <div class="row">
+            <label for="color_pick">Välj färg:</label>
+            <input type="color" id="color_pick" name="color_pick" value="#6a7cab">
+        </div>
+        <div class="input-field">
+            <input type="text" class="datepicker" id="date1" name="date1">
+            <label for="date1">Datum:</label>
+        </div>
+        <div class="row">
+            <label for="month1">Månad:</label>
+            <input type="month" id="month1" name="month1">
+        </div>
+        <div class="row">
+            <label for="week1">Vecka:</label>
+            <input type="week" id="week1" name="week1">
+        </div>
+        <div class="input-field">
+            <input type="text" class="timepicker" id="time1" name="time1">
+            <label for="time1">Tid:</label>
+        </div>
+        <div class="row">
+            <label for="datetime">Välj datum och tid:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </div>
+        <input type="image" id="done" name="done" src="done.png" alt="Submit">
+    </form>
+    <form>
+        <div class="input-field">
+            <input type="text" id="t_reset" name="t_reset" placeholder="Skriv här">
+            <label for="t_reset">Text:</label>
+        </div>
+        <input type="reset" value="Radera">
+        <input type="button" onclick="alert('Skriv text i textrutan. Klicka på knappen för att återställa textrutan')" value="Hjälp">
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>M.AutoInit();</script>
+</body>
+</html>

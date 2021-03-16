@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize - Tabeller och formulär &copy; Patricia 2021</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <form>
+        <div class="input-field">
+            <input type="email" name="email1" id="email1">
+            <label for="email1">Email:</label>
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" id="password">
+            <label for="password">Lösenord:</label>
+        </div>
+        <div class="row">
+            <p>
+                <label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <span>Godkänn användarvillkor:</span>
+                </label>
+            </p>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Submit</button>
+    </form>
+    <form>
+        <div class="input-field">
+            <input type="text" name="fname" id="fname">
+            <label for="fname">Förnamn:</label>
+        </div>
+        <div class="input-field">
+            <input type="text" name="lname" id="lname">
+            <label for="lname">Efternamn:</label>
+        </div>
+        <div class="input-field">
+            <input type="text" name="adress" id="adress">
+            <label for="adress">Adress:</label>
+        </div>
+        <div class="input-field">
+            <input type="email" name="email2" id="email2">
+            <label for="email2">Email:</label>
+        </div>
+        <div class="input-field">
+            <input type="tel" name="tel" id="tel">
+            <label for="tel">Telefonnummer:</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Submit</button>
+    </form>
+    <form>
+        <div class="input-field">
+            <select id="basicSelect" name="basicSelect">
+                <option>Val 1</option>
+                <option>Val 2</option>
+                <option>Val 3</option>
+                <option>Val 4</option>
+                <option>Val 5</option>
+            </select>
+            <label>Välj:</label>
+        </div>
+        <div class="input-field">
+            <select id="groupSelect" name="groupSelect">
+                <optgroup label="Grupp 1">
+                    <option>Val 1</option>
+                    <option>Val 2</option>
+                    <option>Val 3</option>
+                </optgroup>
+                <optgroup label="Grupp 2">
+                    <option>Val 4</option>
+                    <option>Val 5</option>
+                    <option>Val 6</option>
+                </optgroup>
+            </select>
+            <label>Välj:</label>
+        </div>
+        <div class="input-field">
+            <textarea id="textarea" name="textarea" class="materialize-textarea"></textarea>
+            <label for="textarea">Text:</label>
+        </div>
+        <div class="row">
+            <label for="range">Pris:</label>
+            <p class="range-field">
+                <input type="range" id="range" name="range">
+            </p>
+        </div>
+        <div class="row">
+            <p>
+                <label>
+                    <input type="radio" name="radios" id="radios1" value="value1" checked>
+                    <span>Value 1</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="radios" id="radios2" value="value2">
+                    <span>Value 2</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="radios" id="radios3" value="value3">
+                    <span>Value 3</span>
+                </label>
+            </p>
+        </div>
+        <div class="row">
+            <label for="color">Välj färg:</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Submit</button>
+    </form>
+    <form>
+        <div class="input-field">
+            <input type="search" name="search" id="search">
+            <label for="search">Sök:</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light">Submit</button>
+    </form>
+    <form>
+        <div class="input-field">
+            <input type="text" class="datepicker" name="date" id="date">
+            <label for="date">Datum:</label>
+        </div>
+        <div class="row">
+            <label for="datetime">Datum och tid:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </div>
+        <div class="input-field">
+            <input type="text" class="timepicker" id="time" name="time">
+            <label for="time">Tid:</label>
+        </div>
+        <div class="row">
+            <label for="week">Vecka:</label>
+            <input type="week" name="week" id="week">
+        </div>
+        <div class="row">
+            <label for="month">Månad:</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Välj fil:</span>
+                <input type="file" id="new_file" name="new_file">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Vita sportskor</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Skor</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Vit</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>450 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Unisex</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Gula solglasögon</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Solglasögon</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Gul</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>250 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Raybon</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Unisex</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Grå beanie</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Mössa</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Grå</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>350 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Unisex</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Svart klänning</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Klänning</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Svart</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>500 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>HM</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Dam</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Mörkblå byxor</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Byxor</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Blå</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>400 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Dam</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Jeans-shorts</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Shorts</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Vit och blå</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>200 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Herr</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Blå jeanskjol</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Kjol</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Blå</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>299 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Dam</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Stickad tröja</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Tröja</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Grå</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>499 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Dam</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Svart t-shirt</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Tröja</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Svart</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>150 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Herr</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Svart läderjacka</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Jacka</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Svart</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>600 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Herr</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Gul luvtröja</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Tröja</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Gul</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>349 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Herr</td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                <th>Beskrivning:</th>
+                <td>Grå mjukisbyxor</td>
+            </tr>
+            <tr>
+                <th>Plagg:</th>
+                <td>Byxor</td>
+            </tr>
+            <tr>
+                <th>Färg:</th>
+                <td>Grå</td>
+            </tr>
+            <tr>
+                <th>Pris:</th>
+                <td>200 kr</td>
+            </tr>
+            <tr>
+                <th>Märke:</th>
+                <td>Nike</td>
+            </tr>
+            <tr>
+                <th>Avdelning:</th>
+                <td>Dam</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>M.AutoInit();</script>
+</body>
+</html>

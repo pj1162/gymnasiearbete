@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma - Tabeller och formulär &copy; Matilda 2021</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form>
+        <div class="field">
+               <label for="email1" class="label">Email:</label>
+               <div class="control">
+                   <input id="email1" name="email1" class="input" type="email">
+               </div>
+           </div>
+        
+        <div class="field">
+               <label for="password" class="label">Lösenord:</label>
+               <div class="control">
+                   <input id="password" name="password" class="input" type="password">
+               </div>
+           </div>
+        
+        <div class="field">
+            <div class="control">
+                <label class="checkbox" for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    Godkänn Användarvillkor
+                </label>
+            </div>
+        </div>
+        
+        <div class="field">
+        <div class="control">
+            <button class="button">Submit</button>
+        </div>
+        </div>
+    </form>
+    
+    
+    <form>
+        <div class="field">
+               <label for="fname" class="label">Förnamn:</label>
+               <div class="control">
+                   <input id="fname" name="fname" class="input" type="text">
+               </div>
+           </div>
+        
+        <div class="field">
+               <label for="lname" class="label">Efternamn:</label>
+               <div class="control">
+                   <input id="lname" name="lname" class="input" type="text">
+               </div>
+           </div>
+        
+        <div class="field">
+               <label for="adress" class="label">Adress:</label>
+               <div class="control">
+                   <input id="adress" name="adress" class="input" type="text">
+               </div>
+           </div>
+        
+        <div class="field">
+               <label for="email2" class="label">Email:</label>
+               <div class="control">
+                   <input id="email2" name="email2" class="input" type="email">
+               </div>
+           </div>
+        
+        <div class="field">
+               <label for="tel" class="label">Telefonnummer:</label>
+               <div class="control">
+                   <input id="tel" name="tel" class="input" type="tel">
+               </div>
+           </div>
+        
+        <div class="field">
+        <div class="control">
+            <button class="button">Submit</button>
+        </div>
+        </div>
+    </form>
+    
+    
+    <form>
+        <div class="field">
+            <label for="basicSelect" class="label">Välj:</label>
+            <div class="control">
+                <div class="select">
+                    <select id="basicSelect" name="basicSelect">
+                        <option>Val 1</option>
+                        <option>Val 2</option>
+                        <option>Val 3</option>
+                        <option>Val 4</option>
+                        <option>Val 5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="groupSelect" class="label">Välj:</label>
+            <div class="control">
+                <div class="select">
+                    <select id="groupSelect" name="groupSelect">
+                        <optgroup label="Grupp 1">
+                            <option>Val 1</option>
+                            <option>Val 2</option>
+                            <option>Val 3</option>
+                            </optgroup>
+                        <optgroup label="Grupp 2">
+                            <option>Val 4</option>
+                            <option>Val 5</option>
+                            <option>Val 6</option>
+                            </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="textarea" class="label">Text:</label>
+            <div class="control">
+                <textarea id="textarea" name="textarea" class="textarea"></textarea>
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="range" class="label">Pris:</label>
+            <div class="control">
+        <input type="range" id="range" name="range">
+            </div>
+        </div>
+        
+        <div class="field">
+        <div class="control">
+            <label class="radio">
+                <input name="radios" id="radios1" type="radio" value="value 1" checked>
+                Value 1
+            </label>
+            <label class="radio">
+                <input id="radios2" name="radios" type="radio" value="value 2">
+                Value 2
+            </label>
+            <label class="radio">
+                <input id="radios3" name="radios" type="radio" value="value 3">
+                Value 3
+            </label>
+        </div>
+        </div>
+        
+        <div class="field">
+            <label for="color" class="label">Välj färg:</label>
+            <div class="control">
+        <input type="color" id="color" name="color">
+            </div>
+        </div>
+        
+        <div class="field">
+        <div class="control">
+            <button class="button">Submit</button>
+        </div>
+        </div>
+    </form>
+    
+    
+    <form>
+        <div class="field">
+               <label for="search" class="label">Sök:</label>
+               <div class="control">
+                   <input id="search" name="search" type="search">
+               </div>
+           </div>
+        
+        <div class="field">
+        <div class="control">
+            <button class="button">Submit</button>
+        </div>
+        </div>
+    </form>
+    
+    
+    <form>
+        <div class="field">
+            <label for="date" class="label">Datum:</label>
+            <div class="control">
+                <input type="date" id="date" name="date">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="datetime" class="label">Datum och tid:</label>
+            <div class="control">
+                <input type="datetime-local" id="datetime" name="datetime">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="time" class="label">Tid:</label>
+            <div class="control">
+                <input type="time" id="time" name="time">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="week" class="label">Vecka:</label>
+            <div class="control">
+                <input type="week" id="week" name="week">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="month" class="label">Månad:</label>
+            <div class="control">
+                <input type="month" id="month" name="month">
+            </div>
+        </div>
+        
+        <div class="field">
+            <label for="file" class="label">Välj fil:</label>
+            <div class="control">
+                <div class="file">
+            <label class="file-label">
+                <input class="file-input" type="file" name="file" id="file">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fa fa-upload"></i>
+                    </span>
+                </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            Vita sportskor
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Skor
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Vit
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            450 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Unisex 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            Gula solglasögon
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Solglasögon
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Gul
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            250 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           Raybon
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Unisex 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            Grå beanie
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Mössa
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                          Grå
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            350 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                            Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Unisex
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                          Svart klänning  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Klänning
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Svart
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            500 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           HM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Dam 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            	Mörkblå byxor
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                           Byxor 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Blå
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            400 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                           Dam  
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            Jeans-shorts
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                           Shorts
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Vit och blå
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            200 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                          Herr  
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                           Blå jeans-kjol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Kjol
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                           Blå 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            299 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                            Nike
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Dam 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            Stickad tröja
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Tröja
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                           Grå
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            499 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                          Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                          Dam   
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                           Svart t-shirt
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Tröja
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Svart
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            150 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                            Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Herr 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                          Svart läderjacka 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Jacka
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                           Svart
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            600 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           Nike 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                            Herr 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                            Gul luvtröja
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Tröja
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                           Gul
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                           349 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                           Nike
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                           Herr   
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+    
+    
+    <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                           Beskrivning: 
+                                        </th>
+                                        <td>
+                                           	Gråa mjukisbyxor
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Plagg: 
+                                        </th>
+                                        <td>
+                                            Byxor
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Färg:
+                                        </th>
+                                        <td>
+                                            Grå
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Pris: 
+                                        </th>
+                                        <td>
+                                            200 kr
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                          Märke:  
+                                        </th>
+                                        <td>
+                                          Nike 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                           Avdelning: 
+                                        </th>
+                                        <td>
+                                          Dam   
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+</body>
+</html>
