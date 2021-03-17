@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Formulär &copy;2021 Patricia</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Namn</legend>
+            <p>
+                <label for="fname">Förnamn:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Förnamn">
+            </p>
+            <p>
+                <label for="lname">Efternamn:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Efternamn">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="address">Adress:</label><br>
+                <input type="text" id="address" name="address" placeholder="Adressgatuvägen 3">
+            </p>
+            <p>
+                <label for="password1">Lösenord:</label><br>
+                <input type="password" id="password1" placeholder="Lösenord">
+            </p>
+            <p>
+                <label for="password2">Lösenord:</label><br>
+                <input type="password" id="password2" placeholder="Lösenord">
+            </p>
+            <p>
+                <label for="email1">E-post:</label><br>
+                <input type="email" id="email1" placeholder="fornamn.efternamn@example.com">
+            </p>
+            <p>
+                <label for="phone">Telefonnummer:</label><br>
+                <input type="tel" id="phone" placeholder="+XX 678 XX XX">
+            </p>
+            <button type="submit">Skicka</button>
+        </fieldset>
+    </form>
+    <form>
+        <label for="fsearch">Sök:</label><br>
+        <input type="search" id="fsearch" name="fsearch">
+        <input type="submit" value="Sök">
+    </form>
+    <form oninput="c.value=parseInt(a.value)+parseInt(b.value)">
+        <p>
+            <input type="radio" id="setting1" name="radiogroup" value="setting1">
+            <label for="setting1">Alternativ 1</label><br>
+            <input type="radio" id="setting2" name="radiogroup" value="setting2">
+            <label for="setting2">Alternativ 2</label><br>
+            <input type="radio" id="setting3" name="radiogroup" value="setting3" checked>
+            <label for="setting3">Alternativ 3</label><br>
+            <input type="radio" id="setting4" name="radiogroup" value="setting4">
+            <label for="setting4">Alternativ 4</label>
+        </p>
+        <p>
+            <input type="checkbox" id="option1" name="option1" value="option1">
+            <label for="option1">Val 1</label><br>
+            <input type="checkbox" id="option2" name="option2" value="option2">
+            <label for="option2">Val 2</label><br>
+            <input type="checkbox" id="option3" name="option3" value="option3">
+            <label for="option3">Val 3</label><br>
+            <input type="checkbox" id="option4" name="option4" value="option4">
+            <label for="option4">Val 4</label>
+        </p>
+        <p>
+            <label for="select-basic">Välj:</label>
+            <select id="select-basic" name="select-basic">
+                <option value="1">Val 1</option>
+                <option value="2">Val 2</option>
+                <option value="3">Val 3</option>
+                <option value="4">Val 4</option>
+            </select>
+        </p>
+        <p>
+            <label for="select-group">Välj:</label>
+            <select id="select-group" name="select-group">
+                <optgroup label="Grupp 1">
+                    <option value="1">Val 1</option>
+                    <option value="2">Val 2</option>
+                </optgroup>
+                <optgroup label="Grupp 2">
+                    <option value="3">Val 3</option>
+                    <option value="4">Val 4</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <input list="list1" name="list1">
+            <datalist id="list1">
+                <option value="1">Val 1</option>
+                <option value="2">Val 2</option>
+                <option value="3">Val 3</option>
+                <option value="4">Val 4</option>
+            </datalist>
+        </p>
+        <p>
+            1
+            <input type="range" id="a" name="a" value="50" min="1" max="150">
+            150 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="c" for="a b"></output>
+        </p>
+        <p>
+            <label for="textarea1">Textarea:</label>
+            <textarea id="textarea1" name="textarea1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque sodales ut. Nam libero justo laoreet sit amet cursus sit.</textarea>
+        </p>
+        <p>
+            <label for="add_link">Webbadress:</label><br>
+            <input type="url" id="add_link" name="add_link" placeholder="https://example.com/">
+        </p>
+        <p>
+            <label for="new_file">Välj fil:</label><br>
+            <input type="file" id="new_file" name="new_file">
+        </p>
+        <input type="hidden" name="customer_id" id="customer_id" value="123456">
+        <p>
+            <label for="color_pick">Välj färg:</label>
+            <input type="color" id="color_pick" name="color_pick" value="#6a7cab">
+        </p>
+        <p>
+            <label for="date1">Datum:</label>
+            <input type="date" id="date1" name="date1">
+        </p>
+        <p>
+            <label for="month1">Månad:</label>
+            <input type="month" id="month1" name="month1">
+        </p>
+        <p>
+            <label for="week1">Vecka:</label>
+            <input type="week" id="week1" name="week1">
+        </p>
+        <p>
+            <label for="time1">Tid:</label>
+            <input type="time" id="time1" name="time1">
+        </p>
+        <p>
+            <label for="datetime">Välj datum och tid:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </p>
+        <input type="image" id="done" name="done" src="done.png" alt="Submit">
+    </form>
+    <form>
+        <p>
+        <label for="t_reset">Text:</label><br>
+        <input type="text" id="t_reset" name="t_reset" placeholder="Skriv här"><br>
+        <input type="reset" value="Radera">
+        <input type="button" onclick="alert('Skriv text i textrutan. Klicka på knappen för att återställa textrutan')" value="Hjälp">
+        </p>
+    </form>
+</body>
+</html>
