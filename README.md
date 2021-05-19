@@ -1,5 +1,5 @@
 # Vilket ramverk är snabbast? (Gymnasiearbete)
-En undersökning i Bootstrap, Bulma och Materializes laddningstider
+En undersökning av Bootstrap, Bulma och Materializes laddningstider
 
 Till vårt gymnasiearbete har vi utfört hastighetstest för olika ramverk. Det här är all källkod till test-sidorna.
 
